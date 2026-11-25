@@ -1,0 +1,9 @@
+{
+  "base_url": "https://hapi.fhir.org/baseR4",
+  "resources": ["Patient", "Encounter", "Observation", "Condition"],
+  "page_size": 100,
+  "lookback_days": 3,
+  "request_timeout_seconds": 45,
+  "max_retries": 5,
+  "raw_root": "Files/raw/fhir"
+}

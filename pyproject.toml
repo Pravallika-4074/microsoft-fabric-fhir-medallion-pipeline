@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fhir-fabric-medallion"
+version = "1.0.0"
+description = "Incremental FHIR R4 ingestion and medallion processing for Microsoft Fabric"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31.0,<3.0.0", "urllib3>=2.0.0,<3.0.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
